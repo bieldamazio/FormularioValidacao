@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validação</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main id="form_container">
+        <div id="form_header">
+            <h1>
+                Criar Conta
+            </h1>
+            <button class="btn_default">
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </div>
+        <form>
+            <div id="input_container">
+
+                <div class="input_box">
+                    <label for="nome" class="form_label">Primeiro Nome</label>
+                    <div class="input_field">
+                        <input class="form_control"
+                            type="text" 
+                            name="nome" 
+                            id="nome"
+                            required
+                            placeholder="Digite seu nome"
+                        >
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <label for="sobrenome" class="form_label">Sobrenome</label>
+                    <div class="input_field">
+                        <input class="form_control"
+                            type="text" 
+                            name="sobrenome" 
+                            id="sobrenome"
+                            required
+                            placeholder="Digite seu sobrenome"
+                        >
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <label for="nascimento" class="form_label" >Data de Nascimento</label>
+                    <div class="input_field">
+                        <input class="form_control" 
+                            type="date" 
+                            required
+                            name="nascimento" 
+                            id="nascimento"
+                        >
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <label for="email" class="form_label">E-mail</label>
+                    <div class="input_field">
+                        <input class="form_control" 
+                            type="email" 
+                            name="email" 
+                            required
+                            id="email"
+                            placeholder="exemplo@email.com"
+                        >
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <label for="senha" class="form_label">Senha</label>
+                    <div class="input_field">
+                        <input class="form_control"
+                            type="password" 
+                            name="senha" 
+                            required
+                            id="senha"
+                            placeholder="******"
+                        >
+                        <i class="fa-solid fa-eye-slash icon_senha"></i>
+                    </div>
+                </div>
+
+                <div class="input_box">
+                    <label for="confirmarsenha" class="form_label">Confirmar Senha</label>
+                    <div class="input_field">
+                        <input class="form_control"
+                            type="password" 
+                            name="confirmarsenha" 
+                            id="confirmarsenha"
+                            required
+                            placeholder="******"
+                        >
+                        <i class="fa-solid fa-eye-slash icon_senha"></i>
+                    </div>
+                </div>
+
+                <div class="radio_container">
+                    <label for="genero" class="form_label">Gênero</label>
+                    <div id="genero_inputs">
+                        <div class="radio_box">
+                            <input class="form_control"
+                                type="radio"
+                                name="genero"
+                                id="feminino"
+                                value="feminino"
+                                required
+                            >
+                            <label for="feminino" class="form_label">Feminino</label>
+                        </div>
+                        <div class="radio_box">
+                            <input class="form_control"
+                                type="radio"
+                                name="genero"
+                                id="masculino"
+                                value="masculino"
+                            >
+                            <label for="masculino" class="form_label">Masculino</label>
+                        </div>
+                        <div class="radio_box">
+                            <input class="form_control"
+                                type="radio"
+                                name="genero"
+                                id="outro"
+                                value="outro"
+                            >
+                            <label for="Outro" class="form_label">Outro</label>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+            <button class="btn_default" type="submit">
+                <i class="fa-solid fa-check"></i> 
+                Criar Conta
+            </button>
+        </form>
+    </main>
+</body>
+</html>
